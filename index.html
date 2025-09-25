@@ -1,1 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletic Bilbao B - Sitio Oficial</title>
+    <link rel="stylesheet" href="stile.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="app" class="min-h-screen bg-background text-foreground">
+  
+      <!-- Navigation -->
+      <nav class="bg-primary text-primary-foreground sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+              <img 
+                src="https://placeholder-image-service.onrender.com/image/60x60?prompt=Athletic%20Bilbao%20B%20team%20logo%20with%20red%20and%20white%20stripes%20and%20lion%20symbol&id=bilbao-b-logo-1" 
+                alt="Escudo del Athletic Bilbao B con rayas rojas y blancas y símbolo de león" 
+                class="mr-3"
+              />
+              <h1 class="text-xl font-bold">Athletic Bilbao B</h1>
+            </div>
+            <div class="flex flex-wrap justify-center gap-2 md:gap-6">
+              <button data-section="inicio" class="nav-btn px-3 py-2 rounded-md transition-colors bg-primary-foreground text-primary font-medium active-nav">
+                Inicio
+              </button>
+              <button data-section="historia" class="nav-btn px-3 py-2 rounded-md transition-colors hover:bg-primary-foreground/10">
+                Historia
+              </button>
+              <button data-section="jugadores" class="nav-btn px-3 py-2 rounded-md transition-colors hover:bg-primary-foreground/10">
+                Jugadores
+              </button>
+              <button data-section="calendario" class="nav-btn px-3 py-2 rounded-md transition-colors hover:bg-primary-foreground/10">
+                Calendario
+              </button>
+              <button data-section="noticias" class="nav-btn px-3 py-2 rounded-md transition-colors hover:bg-primary-foreground/10">
+                Noticias
+              </button>
+              <button data-section="contacto" class="nav-btn px-3 py-2 rounded-md transition-colors hover:bg-primary-foreground/10">
+                Contacto
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
 
+      <main class="container mx-auto px-4 py-8">
+        <!-- Home Section -->
+        <section id="inicio" class="section-content active space-y-8">
+            <div class="relative h-96 rounded-lg overflow-hidden">
+              <img 
+                src="https://placeholder-image-service.onrender.com/image/1200x600?prompt=Ciudad%20Deportiva%20de%20Lezama%20with%20Athletic%20Bilbao%20B%20team%20fans%20in%20red%20and%20white%20colors&id=lezama-hero-1" 
+                alt="Ciudad Deportiva de Lezama con aficionados del Athletic Bilbao B en colores rojo y blanco" 
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                <div class="text-center text-white p-4">
+                  <h2 class="text-4xl md:text-5xl font-bold mb-4">Athletic Bilbao B</h2>
+                  <p class="text-xl md:text-2xl">La cantera del futuro, forjando leones en Lezama</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+              <div class="bg-card text-card-foreground p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-3">Nuestra Filosofía</h3>
+                <p>El Athletic Bilbao B mantiene la política de cantera del club, jugando solo con futbolistas vascos o formados en Euskadi, preparando el relevo para el primer equipo.</p>
+              </div>
+              <div class="bg-card text-card-foreground p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-3">El Campo</h3>
+                <p>La Ciudad Deportiva de Lezama es nuestro hogar desde 1971, con instalaciones modernas para el desarrollo de jóvenes talentos.</p>
+              </div>
+              <div class="bg-card text-card-foreground p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-3">Palmarés</h3>
+                <p>3 títulos de Segunda División B, múltiples ascensos y el orgullo de suministrar jugadores al primer equipo desde 1962.</p>
+              </div>
+            </div>
+          </section>
+
+        <!-- History Section -->
+        <section id="historia" class="section-content space-y-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Historia del Bilbao Athletic</h2>
+            
+            <div class="bg-card text-card-foreground p-6 rounded-lg shadow-md">
+              <div class="flex flex-col md:flex-row gap-6 items-center">
+                <img 
+                  src="https://placeholder-image-service.onrender.com/image/400x300?prompt=Vintage%20photo%20of%20Athletic%20Bilbao%20B%20team%20from%201960s&id=history-b-1" 
+                  alt="Foto vintage del equipo Bilbao Athletic de los años 60" 
+                  class="w-full md:w-1/3 rounded-lg"
+                />
+                <div>
+                  <h3 class="text-2xl font-semibold mb-3">Fundación y Primeros Años</h3>
+                  <p>El Bilbao Athletic fue fundado en 1962 como equipo filial del Athletic Club, para dar salida a los jugadores de la cantera. Ha competido en categorías inferiores, contribuyendo al éxito del club matriz.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-card text-card-foreground p-6 rounded-lg shadow-md mt-6">
+              <div class="flex flex-col md:flex-row gap-6 items-center">
+                <div>
+                  <h3 class="text-2xl font-semibold mb-3">La Política de Cantera</h3>
+                  <p>Como parte integral del Athletic, el B mantiene la tradición vasca, formando jugadores que han pasado al primer equipo como Laporte o Aduriz.</p>
+                </div>
+                <img 
+                  src="https://placeholder-image-service.onrender.com/image/400x300?prompt=Athletic%20Bilbao%20B%20team%20youth%20players%20training%20at%20Lezama&id=history-b-2" 
+                  alt="Jugadores del Bilbao Athletic durante un entrenamiento en Lezama" 
+                  class="w-full md:w-1/3 rounded-lg"
+                />
+              </div>
+            </div>
+            <div class="bg-card text-card-foreground p-6 rounded-lg shadow-md mt-6">
+              <div class="flex flex-col md:flex-row gap-6 items-center">
+                <img 
+                  src="https://placeholder-image-service.onrender.com/image/400x300?prompt=Modern%20Ciudad%20Deportiva%20de%20Lezama%20facilities%20at%20night&id=history-b-3" 
+                  alt="Instalaciones modernas de Lezama iluminadas por la noche" 
+                  class="w-full md:w-1/3 rounded-lg"
+                />
+                <div>
+                  <h3 class="text-2xl font-semibold mb-3">Era Moderna</h3>
+                  <p>Desde los 2000, Lezama se ha modernizado con campos de última generación, sirviendo como base para el desarrollo de talentos que debutan en el primer equipo.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- Players Section -->
+        <section id="jugadores" class="section-content space-y-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Nuestros Jugadores</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Player 1 -->
+              <div class="bg-card text-card-foreground rounded-lg shadow-md overflow-hidden">
+                <img src="https://placeholder-image-service.onrender.com/image/400x500?prompt=Athletic%20Bilbao%20B%20team%20player%20in%20red%20and%20white%20striped%20jersey%20with%20number%206&id=player-b-1" 
+                  alt="Jugador del Athletic Bilbao B con camiseta de rayas rojas y blancas y número 6" 
+                  class="w-full h-64 object-cover"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold">Beñat Prados</h3>
+                  <p class="text-muted-foreground">Mediocentro • Nº6</p>
+                  <p class="mt-2">Joven promesa de la cantera, con gran visión y control del balón. Ha debutado con el primer equipo.</p>
+                </div>
+              </div>
+              <!-- Player 2 -->
+              <div class="bg-card text-card-foreground rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="https://placeholder-image-service.onrender.com/image/400x500?prompt=Athletic%20Bilbao%20B%20team%20player%20in%20red%20and%20white%20striped%20jersey%20with%20number%203&id=player-b-2" 
+                  alt="Jugador del Athletic Bilbao B con camiseta de rayas rojas y blancas y número 3" 
+                  class="w-full h-64 object-cover"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold">Unai Vencedor</h3>
+                  <p class="text-muted-foreground">Defensa • Nº3</p>
+                  <p class="mt-2">Lateral sólido formado en Lezama, conocido por su velocidad y centros precisos.</p>
+                </div>
+              </div>
+              <!-- Player 3 -->
+              <div class="bg-card text-card-foreground rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="https://placeholder-image-service.onrender.com/image/400x500?prompt=Athletic%20Bilbao%20B%20team%20player%20in%20red%20and%20white%20striped%20jersey%20with%20number%2011&id=player-b-3" 
+                  alt="Jugador del Athletic Bilbao B con camiseta de rayas rojas y blancas y número 11" 
+                  class="w-full h-64 object-cover"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold">Javier Hernández</h3>
+                  <p class="text-muted-foreground">Extremo • Nº11</p>
+                  <p class="mt-2">Veloz y desequilibrante, clave en las transiciones rápidas del equipo B.</p>
+                </div>
+              </div>
+              <!-- Player 4 -->
+              <div class="bg-card text-card-foreground rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="https://placeholder-image-service.onrender.com/image/400x500?prompt=Athletic%20Bilbao%20B%20team%20goalkeeper%20in%20red%20and%20white%20striped%20jersey%20with%20number%201&id=player-b-4" 
+                  alt="Portero del Athletic Bilbao B con camiseta de rayas rojas y blancas y número 1" 
+                  class="w-full h-64 object-cover"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold">Aitor Padilla</h3>
+                  <p class="text-muted-foreground">Portero • Nº1</p>
+                  <p class="mt-2">Joven guardameta con reflejos excepcionales, reserva del primer equipo.</p>
+                </div>
+              </div>
+              <!-- Player 5 -->
+              <div class="bg-card text-card-foreground rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="https://placeholder-image-service.onrender.com/image/400x500?prompt=Athletic%20Bilbao%20B%20team%20player%20in%20red%20and%20white%20striped%20jersey%20with%20number%208&id=player-b-5" 
+                  alt="Jugador del Athletic Bilbao B con camiseta de rayas rojas y blancas y número 8" 
+                  class="w-full h-64 object-cover"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold">Iñigo Ruiz de Galarreta</h3>
+                  <p class="text-muted-foreground">Mediocentro • Nº8</p>
+                  <p class="mt-2">Versátil y experimentado en la B, con paso por el primer equipo.</p>
+                </div>
+              </div>
+              <!-- Player 6 -->
+              <div class="bg-card text-card-foreground rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="https://placeholder-image-service.onrender.com/image/400x500?prompt=Athletic%20Bilbao%20B%20team%20player%20in%20red%20and%20white%20striped%20jersey%20with%20number%209&id=player-b-6" 
+                  alt="Jugador del Athletic Bilbao B con camiseta de rayas rojas y blancas y número 9" 
+                  class="w-full h-64 object-cover"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold">Jon Morcillo</h3>
+                  <p class="text-muted-foreground">Delantero • Nº9</p>
+                  <p class="mt-2">Goleador nato de la cantera, con gran olfato en el área.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- Calendar Section (Completato) -->
+        <section id="calendario" class="section-content space-y-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Calendario y Resultados</h2>
+            
+            <div class="bg-card text-card-foreground rounded-lg shadow-md overflow-hidden">
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead class="bg-muted">
+                    <tr>
+                      <th class="px-4 py-3 text-left">Fecha</th>
+                      <th class="px-4 py-3 text-left">Competición</th>
+                      <th class="px-4 py-3 text-left">Partido</th>
+                      <th class="px-4 py-3 text-left">Resultado</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b border-border">
+                      <td class="px-4 py-3">12/08/2023</td>
+                      <td class="px-4 py-3">Segunda Federación</td>
+                      <td class="px-4 py-3">Athletic Bilbao B vs Real Sociedad B</td>
+                      <td class="px-4 py-3">1-0</td>
+                    </tr>
+                    <tr class="border-b border-border">
+                      <td class="px-4 py-3">20/08/2023</td>
+                      <td class="px-4 py-3">Segunda Federación</td>
+                      <td class="px-4 py-3">Osasuna B vs Athletic Bilbao B</td>
+                      <td class="px-4 py-3">1-1</td>
+                    </tr>
+                    <tr class="border-b border-border">
+                      <td class="px-4 py-3">27/08/2023</td>
+                      <td class="px-4 py-3">Segunda Federación</td>
+                      <td class="px-4 py-3">Athletic Bilbao B vs Barakaldo CF</td>
+                      <td class="px-4 py-3">2-1</td>
+                    </tr>
+                    <tr class="border-b border-border">
+                      <td class="px-4 py-3">03/09/2023</td>
+                      <td class="px-4 py-3">Segunda Federación</td>
+                      <td class="px-4 py-3">UD Logroñés B vs Athletic Bilbao B</td>
+                      <td class="px-4 py-3">0-2</td>
+                    </tr>
+                   
